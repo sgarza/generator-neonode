@@ -1,20 +1,40 @@
 {
   "name": "generator-neonode",
   "version": "0.0.1",
-  "description": "Neonode Yeoman generator for creating a Neonode fullstack application.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Yeoman generator to scaffold a Neonode Fullstack MVC Application",
+  "homepage": "",
+  "author": {
+    "name": "Sergio de la Garza",
+    "email": "sergio@delagarza.io",
+    "url": ""
   },
-  "keywords": [
-    "yeoman-generator",
-    "fullstack",
-    "framework",
-    "neon",
-    "neonode",
-    "scaffold",
-    "mvc"
+  "scripts": {
+    "test": "NODE_ENV=test mocha -t 10000 --reporter spec"
+  },
+  "files": [
+    "generators"
   ],
-  "author": "Sergio de la Garza <sergio@delagarza.io>",
-  "license": "MIT"
+  "main": "generators/app/index.js",
+  "keywords": [
+    "yeoman",
+    "generator",
+    "fullstack",
+    "mvc",
+    "scaffold",
+    "neon",
+    "neonode"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "inquirer-npm-name": "^1.0.0",
+    "lodash": "^3.10.1",
+    "mkdirp": "^0.5.1",
+    "yeoman-generator": "^0.22.2",
+    "yosay": "^1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "yeoman-test": "^1.0.0"
+  }
 }
