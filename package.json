@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Yeoman generator to scaffold a Neonode Fullstack MVC Application",
   "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sgarza/generator-neonode"
+  },
   "author": {
     "name": "Sergio de la Garza",
     "email": "sergio@delagarza.io",
