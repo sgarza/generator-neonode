@@ -1,0 +1,20 @@
+{
+  "name": "generator-neonode",
+  "version": "0.0.1",
+  "description": "Neonode Yeoman generator for creating a Neonode fullstack application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "fullstack",
+    "framework",
+    "neon",
+    "neonode",
+    "scaffold",
+    "mvc"
+  ],
+  "author": "Sergio de la Garza <sergio@delagarza.io>",
+  "license": "MIT"
+}
