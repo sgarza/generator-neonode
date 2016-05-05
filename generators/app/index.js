@@ -1,6 +1,5 @@
 'use strict';
 var yeoman = require('yeoman-generator');
-var askName = require('inquirer-npm-name');
 var chalk = require('chalk');
 var yosay = require('yosay');
 var path = require('path');
@@ -21,19 +20,17 @@ module.exports = yeoman.Base.extend({
     var done = this.async();
 
     this.log(yosay(
-      'Welcome to the groovy ' + chalk.red('generator-neonode') + ' generator!'
+      'Welcome to the groovy ' + chalk.red('neonode') + ' generator!'
     ));
 
-    askName({
+    this.prompt({
+      type: 'input',
       name: 'name',
-      message: 'Whats your new project name?',
+      message: 'Whats your project name',
       default: makeGeneratorName(path.basename(process.cwd())),
-      filter: makeGeneratorName,
-      validate: function (str) {
-        return str.length > 0;
-      }
-    }, this, function (name) {
-      this.props.name = name;
+    }, function(answers) {
+      this.props.name = answers.name;
+
       done();
     }.bind(this));
   },

@@ -1,3 +1,5 @@
+var path = require('path');
+
 // Custom Errors
 global.NotFoundError = function NotFoundError(message) {
   this.name = 'NotFoundError';
@@ -9,5 +11,12 @@ NotFoundError.prototype.constructor = NotFoundError;
 
 // Load LithiumEngine
 if (CONFIG[CONFIG.environment].enableLithium) {
-  require('./LithiumEngine.js');
+  require(path.join(process.cwd(), 'lib', 'LithiumEngine.js'));
 }
+
+// Load RouteMapper
+CONFIG.router = require(path.join(process.cwd(), 'config', 'routeMapper.js'));
+
+// Comment the following 2 lines to disable database access
+var knex = require('knex')(CONFIG.database[CONFIG.environment]);
+Krypton.Model.knex(knex); // Bind a knex instance to all Krypton Models

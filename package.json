@@ -1,6 +1,6 @@
 {
   "name": "generator-neonode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Yeoman generator to scaffold a Neonode Fullstack MVC Application",
   "homepage": "",
   "repository": {
@@ -30,11 +30,10 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "chalk": "^1.1.1",
-    "inquirer-npm-name": "^1.0.0",
+    "chalk": "^1.1.3",
     "lodash": "^3.10.1",
     "mkdirp": "^0.5.1",
-    "yeoman-generator": "^0.22.2",
+    "yeoman-generator": "^0.22.6",
     "yosay": "^1.1.0"
   },
   "devDependencies": {
