@@ -5,7 +5,7 @@ A Yeoman generator to scaffold an opinionated minimalistic MVC framework.
 ## Quick Start
 First you need to install yeoman and neonode's generator:
 ```sh
-$ npm install -g yeoman genearator-neonode
+$ npm install -g yo generator-neonode
 ```
 
 Now run neonode's generator:
