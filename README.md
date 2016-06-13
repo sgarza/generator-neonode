@@ -1,5 +1,7 @@
 #Neonode
 
+[![npm-image](https://img.shields.io/npm/v/generator-neonode.svg)](https://www.npmjs.com/package/generator-neonode)
+
 A Yeoman generator to scaffold an opinionated minimalistic MVC framework.
 
 ## Quick Start
